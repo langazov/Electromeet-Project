@@ -548,7 +548,8 @@ footer div {
 
 /* Presenter Profile */
 .profileBlocks {
-	    
+	display: flex;
+	justify-content: center;
 }
 
 .profileBlocks a {
@@ -561,13 +562,15 @@ footer div {
  }
 
 .profileBlocks .blocks {
-    transition: .3s ease-in-out;
+    float: left;
+	transition: .3s ease-in-out;
     display: inline-block;
     text-shadow: 1.5px 1.5px 1.5px black;
     padding: 15px;
     width: 333px;
     font-size: 180%;
     background: rgba(253, 133, 4, 0.8);
+	text-align: center;
 }
 
 .profileBlocks .blocks:hover {
