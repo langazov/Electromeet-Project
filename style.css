@@ -549,7 +549,6 @@ footer div {
 /* Presenter Profile */
 .profileBlocks {
 	display: flex;
-	/* float: left; */
 	justify-content: center;
 	overflow: visible;
 }
@@ -573,7 +572,6 @@ footer div {
     text-shadow: 1.5px 1.5px 1.5px black;
     padding: 15px;
     width: 265px;
-    float: left;
     height: 180px;
     font-size: 151%;
     background: rgba(253, 133, 4, 0.8);
