@@ -548,23 +548,26 @@ footer div {
 
 /* Presenter Profile */
 .profileBlocks {
-	overflow: auto;
+    overflow: auto;
 }
 
 .profileBlocks a {
     text-decoration: white;
     color: white;
- }
- 
- .profileBlocks a:hover {
-	 color: white;
- }
+}
 
- .profileBlocks span {
-	position: relative;
-	top: 32px;
-	}
- 
+.profileBlocks a:hover {
+    color: white;
+}
+
+.profileBlocks span {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .profileBlocks .blocks {
     transition: .3s ease-in-out;
     float: left;
@@ -573,21 +576,20 @@ footer div {
     height: 180px;
     font-size: 150%;
     width: 18%;
-    border: 1px solid lightgray;
-    border-radius: 20px;
-    background: rgba(253, 133, 4, 0.8);
     text-align: center;
+    border: 1px solid lightgray;
+    background: rgba(253, 133, 4, 0.8);
     margin: 5px 5px 0 0;
 }
 
 .profileBlocks .blocks:hover {
-	background: rgb(253, 133, 4);
+    background: rgb(253, 133, 4);
 }
 
-@media only screen and (max-width: 938px) {
+@media only screen and (max-width: 833px) {
     .profileBlocks .blocks {
         width: 100%;
-		float: initial;
-		height: 126px;
+        float: initial;
+        height: 126px;
     }
 }
