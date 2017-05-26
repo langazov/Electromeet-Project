@@ -79,7 +79,7 @@ img {
 }
 
 a:hover {
-    color: #fd8504 !important;
+    color: #fd8504;
 }
 
 h4 {
@@ -547,11 +547,29 @@ footer div {
 }
 
 /* Presenter Profile */
-
 .profileBlocks {
-	text-decoration: none;
+	    
 }
 
+.profileBlocks a {
+    text-decoration: white;
+    color: white;
+ }
+ 
+ .profileBlocks a:hover {
+	 color: white;
+ }
+
 .profileBlocks .blocks {
-	
+    transition: .3s ease-in-out;
+    display: inline-block;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    padding: 15px;
+    width: 390px;
+    font-size: 180%;
+    background: rgba(253, 133, 4, 0.8);
+}
+
+.profileBlocks .blocks:hover {
+	background: rgba(253, 133, 4, 0.4);
 }
