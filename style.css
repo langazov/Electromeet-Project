@@ -571,13 +571,23 @@ footer div {
     text-shadow: 1.5px 1.5px 1.5px black;
     padding: 15px;
     height: 180px;
-    font-size: 151%;
-    width: 200px;
+    font-size: 150%;
+    width: 18%;
+    border: 1px solid lightgray;
+    border-radius: 20px;
     background: rgba(253, 133, 4, 0.8);
     text-align: center;
-    margin: 0 5px 0 0;
+    margin: 5px 5px 0 0;
 }
 
 .profileBlocks .blocks:hover {
-	background: rgba(253, 133, 4, 0.4);
+	background: rgb(253, 133, 4);
+}
+
+@media only screen and (max-width: 938px) {
+    .profileBlocks .blocks {
+        width: 100%;
+		float: initial;
+		height: 126px;
+    }
 }
