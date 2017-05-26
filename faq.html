@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="http://www.eit.edu.au/sites/default/files/eit-2_favicon.ico" type="image/x-icon" />
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="script.js"></script>
+        <title>FAQs - Electromeet</title>
+    </head>
+    <body>
+        <!-- Document located:
+	- FTP: /public_html/downloads/Electromeet_Website
+	- Website: http://www.eit.edu.au/downloads/Electromeet_Website/faq.html
+	
+	-->
+        <section class="topHeader">
+            <a href="#" target="_blank">
+                <section class="loginLink">
+                    <img src="http://i.imgur.com/M3t6gEe.png" alt="lock" style="width: 15px; transform: translate(-2px, -3px);">Presenter Login
+
+
+      
+                
+                </section>
+            </a>
+            <a href="" target="_blank">
+                <section class="headerLogo"></section>
+            </a>
+            <section class="navBar">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="webinar.html">
+                        <li>Webinar</li>
+                    </a>
+                    <a href="other_products.html">
+                        <li>Other Products</li>
+                    </a>
+                    <a href="faq.html">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </section>
+        </section>
+        <section class="aboutSection">
+            <h2 style="margin:0;">FAQ</h2>
+            <p>
+                We may be able to save your time with this collection of frequently asked questions by our students. If these are unable to help you, we recommend contacting our <a href="/contact.html" target="_blank">support team</a>.
+            
+            </p>
+            
+            <button class="accordion">What is the best browser to use?</button>
+            <div class="accContents">
+                <p>
+                    <a href="https://www.google.com/chrome/" target="_blank">Google Chrome</a>
+                    is always the most optimal browser to use for Electromeet, followed closely by <a href="https://www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a>
+                    .
+                
+                </p>
+                <p>We highly recommend that you do not use Internet Explorer, as it has been known to have compatibility issues with the operating system.</p>
+            </div>
+            <br>
+            <button class="accordion">My Microphone isn't working/the quality is poor</button>
+            <div class="accContents">
+                <p>There are two potential issues that could be occurring if your microphone isn't working:</p>
+				<ul>
+				<li>Your microphone isn't properly initiated on your device. <a href="http://www.wikihow.com/Set-Up-a-Mic-in-Windows-8" target="_blank" >This</a> tutorial should help. </li>
+				<li>The internet quality isn't very good. This can be established by confirming if the presenter (or your other peers) are having difficulties hearing you.</li>
+				
+				</ul>
+				
+				<br>
+				
+				<p>The below gauge can determine whether your microphone is working. If you see a fluctuating green bar in the gray box below, then it means your microphone is working on the browser.</p>
+				
+				<canvas id="meter" width="500" height="50"></canvas>
+				<script src="volume_tool.js"></script>
+				
+				
+            </div>
+            <br>
+            <button class="accordion">How can I tell when I am online?</button>
+            <div class="accContents">
+                <p>Your name will appear on the screen if you are online.</p>
+            </div>
+            <br>
+            <button class="accordion">I am a Provider. If am doing a number of sessions with a presenter, do I always have to get new links for each session?</button>
+            <div class="accContents">
+                <p>No, you can use the source link again.</p>
+            </div>
+            <br>
+            <button class="accordion">I use Open Office to create my presentations with the extension ".sxi". But when I Load Presentation in Electromeet nothing happens.</button>
+            <div class="accContents">
+                <p>It is best practice to export your presentations as a PDF and then upload onto Electromeet.</p>
+            </div>
+            <br>
+        </section>
+        <script>
+            // Javascript Code
+
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].onclick = function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                }
+                ;
+            }
+        </script>
+        <footer>
+            <section>
+                <h4>Sitemap</h4>
+                <ul>
+                    <a href="index.html" target="_blank"><li>Home</li></a>
+					<a href="webinar.html" target="_blank"><li>Webinar</li></a>
+					<a href="other_products.html" target="_blank"><li>Other Products</li></a>
+					<a href="faq.html" target="_blank"><li>FAQ</li></a>
+					<a href="contact.html" target="_blank"><li>Contact</li></a>
+                </ul>
+            </section>
+            <section>
+                <h4>Get Updates</h4>
+                <input type="text" name="FirstName" placeholder=" Your Email">
+            </section>
+            <section>
+                <h4>Head Office</h4>
+                <ul>
+                    <li>Australia </li>
+                    <li>Perth </li>
+                    <li>PO Box 1093 </li>
+                    <li>West Perth WA 6872 </li>
+                    <li>1031 Wellington Street </li>
+                    <li>West Perth WA 6005</li>
+                    <li>Tel: (08) 9321 1702, 1300 138 522 </li>
+                    <li>Fax: (08) 9321 2891, 1300 138 533</li>
+                </ul>
+            </section>
+            <div>
+                Copyright &copy;<script type="text/javascript">
+                    
+												document.write(new Date().getFullYear());
+									
+                </script>
+                Electromeet.com
+            </div>
+        </footer>
+    </body>
+</html>
