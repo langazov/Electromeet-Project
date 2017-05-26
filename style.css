@@ -549,8 +549,9 @@ footer div {
 /* Presenter Profile */
 .profileBlocks {
 	display: flex;
-	float: left;
+	/* float: left; */
 	justify-content: center;
+	overflow: visible;
 }
 
 .profileBlocks a {
@@ -562,11 +563,17 @@ footer div {
 	 color: white;
  }
 
+ .profileBlocks span {
+	position: relative;
+	top: 35px;
+	}
+ 
 .profileBlocks .blocks {
     transition: .3s ease-in-out;
     text-shadow: 1.5px 1.5px 1.5px black;
     padding: 15px;
     width: 265px;
+    float: left;
     height: 180px;
     font-size: 151%;
     background: rgba(253, 133, 4, 0.8);
