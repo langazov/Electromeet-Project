@@ -593,3 +593,10 @@ input {
         height: 126px;
     }
 }
+
+
+@media only screen and (max-width: 533px) {
+    .customTimeModule {
+        display: none;
+    }
+}
