@@ -594,6 +594,13 @@ input {
     }
 }
 
+/* Generate Initial Access Keys */
+
+.accessKey {
+    width: 220px;
+    font-size: 60%;
+}
+
 /* Session Recordings Page */
 .customTimeModule {
     text-align: center;
