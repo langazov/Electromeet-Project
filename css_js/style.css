@@ -472,11 +472,14 @@ footer div {
     font-size: 130% !important;
 }
 
+/* Microphone Testing Page */
 #meter {
-    border: 1px solid black;
-    height: 25px;
-    background: lightgray;
+    border: 1px dashed #c8c8c8;
+    height: 28px;
+    background: linear-gradient(to right, rgba(200, 200, 200, 0.64) , white);
 }
+
+
 
 /* Contact Page */
 .contactUs form {
