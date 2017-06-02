@@ -595,6 +595,20 @@ input {
 }
 
 /* Generate Initial Access Keys */
+.keyFieldsTitle {
+    font-size: 150%;
+    font-weight: bold;
+    width: 155px;
+}
+
+.keyFieldsText {
+    font-size: 150%;
+    width: 100px;
+    color: red;
+}
+
+.keyFieldsButton {
+}
 
 .accessKey {
     width: 220px;
@@ -619,12 +633,10 @@ input {
 }
 
 .scheduleTable {
-
-background: lightgray;
-
-text-align: center;
+    background: lightgray;
+    text-align: center;
 }
 
 .scheduleTable1 {
-	font-weight: bold;
+    font-weight: bold;
 }

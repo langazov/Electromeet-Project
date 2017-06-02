@@ -27,6 +27,7 @@
                 
                 
                 
+                
                 </section>
             </a>
             <a href="" target="_blank">
@@ -54,31 +55,85 @@
         </section>
         <section class="headerFiller"></section>
         <section class="aboutSection">
-		
             <h2 style="margin:0;">Generate Initial Access Keys</h2>
-			<p>When you generate your Access Keys, you will receive an email containing links for two Keys: one for participants and one for presenters. The email is sent to the address in your <a href="update_details.html" target="_blank">Provider Profile</a>.</p>
+            <p>
+                When you generate your Access Keys, you will receive an email containing links for two Keys: one for participants and one for presenters. The email is sent to the address in your <a href="update_details.html" target="_blank">Provider Profile</a>
+                .
+            </p>
+            <p>You will send these links to those who are joining your session(s).</p>
+			
+			
+			<!--
+			<span class="keyFields">Presenter Key: </span><input type="text" name="LastName" value="Mouse">
+			<br>
+			<span class="keyFields">Student Key: </span><input type="text" name="LastName" value="Mouse">
+			-->
 			
 			
 			
-			<p>You will send these links to those who are joining your session(s).</p>
 			
-			<p>If this is your first time here, you should generate your first set of Access Key links now.
+			
+			
+<table border="0" cellpadding="1" cellspacing="1" style="width:100%;">
+	<tbody>
+		<tr>
+			<td class="keyFieldsTitle">Presenter Key:</td>
+			<td class="keyFieldsText"><span id="p1">13D7JE9</span></td>
+			<td class="keyFieldsButton"><button onclick="copyToClipboard('#p1')">Copy</button></td>
+		</tr>
+		<tr>
+			<td class="keyFieldsTitle">Student Key:</td>
+			<td class="keyFieldsText"><span id="p2">92JK0W2</span></td>
+			<td class="keyFieldsButton"><button onclick="copyToClipboard('#p2')">Copy</button></td>
+		</tr>
+	</tbody>
+</table>
 
-			
-			
-The links provide access to your own "virtual room" on the server and are valid at any time for up to the maximum number of users for your licence version.
 
-Access Key links generated now will be valid from today to the expiry of your licence.
 
-If you are concerned that users from previous sessions may obtain unauthorised access to future sessions, you can generate new access keys from the licence management page.</p>
+
+
+
+		
+
+
+
+
+
+<script>
+	function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+	
+</script>
 			
-			<div class="accessKey">
 			
-			<a href="#">
-                <div class="tryNow">Generate Access Key Now
+			
+			
+			
+			
+			
+			
+			
+		
+            <p>If this is your first time here, you should generate your first set of Access Key links now. The links provide access to your own "virtual room" on the server and are valid at any time for up to the maximum number of users for your licence version. Access Key links generated now will be valid from today to the expiry of your licence. If you are concerned that users from previous sessions may obtain unauthorised access to future sessions, you can generate new access keys from the licence management page.</p>
+            <div class="accessKey">
+                <a href="#">
+                    <div class="tryNow">Generate Access Key Now
 									</div>
-            </a>
-			</div>
+                </a>
+            </div>
+		
+		
+		
+
+			
+			
 			
         </section>
         <footer>
@@ -125,13 +180,16 @@ If you are concerned that users from previous sessions may obtain unauthorised a
                     
                     
                     
+                    
 												document.write(new Date().getFullYear());
 									
                 
                 
                 
+                
                 </script>
                 Electromeet.com
+            
             
             
             
