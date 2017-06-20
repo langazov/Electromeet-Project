@@ -166,7 +166,7 @@ h4 {
 }
 
 .navBar a:hover {
-    color: #808080;
+    color: rgba(0,0,0,0);
 }
 
 .mainContent {
