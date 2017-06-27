@@ -265,11 +265,11 @@ h4 {
 .bronze, .silver, .gold {
     float: left;
     transition: .3s ease-in-out;
-    filter: brightness(100%);
+   /* filter: brightness(100%); */
 }
 
 .bronze:hover, .silver:hover, .gold:hover {
-    filter: brightness(110%);
+   /* filter: brightness(110%); */
 }
 
 .bronze {
