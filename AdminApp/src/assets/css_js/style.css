@@ -1,0 +1,643 @@
+/* Delete after publishing */
+.devNotes div {
+    background: rgba(0, 0, 0, 0.20);
+    position: fixed;
+    bottom: 0;
+    color: white;
+    left: 0;
+    padding: 16px;
+    border-top-right-radius: 17px;
+}
+
+.devNotes div:hover {
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.devPage {
+    padding: 0 20px 0 20px;
+}
+
+.devPage h4 {
+    border-top: 1px dashed lightgray;
+    padding: 5px 0 0 0;
+}
+
+.devPage pre {
+    word-wrap: break-word;
+}
+
+/* Accordion Code */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-weight: bold;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.accContents {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Universal Elements */
+html {
+    font-family: lato;
+}
+
+.hideme {
+    opacity: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover {
+    color: #fd8504;
+}
+
+h4 {
+    margin: 0 !important;
+}
+
+/*
+#toTheTop {
+      display: none;
+    position: fixed;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-bottom: 140px solid rgba(221, 139, 0, 0.32);
+    border-left: 90px solid transparent;
+    right: 0;
+    bottom: 0;
+}
+
+#toTheTop:hover {
+    border-bottom: 140px solid rgba(221, 139, 0, 0.5);
+    border-left: 90px solid transparent;
+}
+
+#toTheTop section {
+	position: fixed;
+	z-index: 3;
+	right: 10px;
+	bottom: 10px;
+   color: white;
+    font-size: 150%;
+}
+*/
+/* Home Page */
+.loginLink {
+    position: absolute;
+    top: 2%;
+    font-size: 125%;
+    right: 2%;
+    color: white;
+}
+
+.topHeader {
+}
+
+.headerLogo {
+    text-align: center;
+    padding: 63px 0 81px 0;
+    background: black;
+    background-image: url(https://electromeet.com/ElectromeetHTML5v3/images/logo.svg);
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navBar {
+    text-align: center;
+    background: #333;
+    text-align: center;
+}
+
+.navBar ul {
+    list-style-type: none;
+    margin: 0 0 0 -40px;
+}
+
+.navBar li {
+    display: inline-block;
+    padding: 2% 4% 2% 4%;
+    font-size: 120%;
+    color: white;
+    transition: .3s ease-in-out;
+    margin: 0 -3px 0 0;
+}
+
+.navBar li:hover {
+    background: gray;
+}
+
+.navBar a:hover {
+    color: rgba(0,0,0,0);
+}
+
+.mainContent {
+    color: white;
+    background: #fd8504;
+    text-align: center;
+    padding: 45px 10px 48px 10px;
+}
+
+.mainContent p {
+    font-size: 200%;
+    padding: 55px 0 35px 0;
+    text-transform: capitalize;
+}
+
+.mainContent div {
+    display: inline-block;
+    border: 1px solid white;
+    background: #16c6cc;
+    width: 210px;
+    padding: 10px 0 10px 0;
+    margin: auto;
+    border-radius: 15px;
+    font-size: 40px;
+    transition: .6s ease-in-out;
+}
+
+@media only screen and (max-width: 500px) {
+    .mainContent div {
+        width: 100%;
+        border-radius: 1px;
+    }
+}
+
+.mainContent a {
+    text-decoration: none;
+    color: white;
+}
+
+.mainContent div:hover {
+    background: white;
+}
+
+.mainContent a:hover {
+    color: #fd8504;
+    text-decoration: none;
+}
+
+.mainContent a:visited {
+    text-decoration: none;
+}
+
+.mainContent a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+/* Electromeet Plans */
+.electromeetPlans {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transition: .3s ease-in-out;
+}
+
+.electromeetPlans a {
+    text-decoration: none;
+    color: black;
+}
+
+.electromeetPlans p {
+    text-align: center;
+    margin: 11px 15px -3px 15px !important;
+}
+
+.electromeetPlans .tryNow {
+    width: 160px;
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 15px;
+}
+
+.bestPlan {
+    background: #fd8504;
+    display: inline-block;
+    padding: 10px;
+    transform: translate(182px, -108px);
+    color: white;
+    border-bottom-left-radius: 15px;
+}
+
+@media only screen and (max-width: 1125px) {
+    .bestPlan {
+        visibility: hidden;
+    }
+
+    .silver h3 {
+        margin: 0;
+    }
+}
+
+.bronze, .silver, .gold {
+    float: left;
+    transition: .3s ease-in-out;
+   /* filter: brightness(100%); */
+}
+
+.bronze:hover, .silver:hover, .gold:hover {
+   /* filter: brightness(110%); */
+}
+
+.bronze {
+}
+
+.silver {
+    border-top: 8px solid #fd8504;
+    border-right: 8px solid #fd8504;
+    border-left: 8px solid #fd8504;
+}
+
+.gold {
+}
+
+.bronze h3, .silver h3, .gold h3 {
+    padding: 40px 60px 40px 60px;
+    margin: 0;
+    text-align: center;
+    color: white;
+    transition: .3s ease-in-out;
+    text-shadow: 1.5px 1.5px 1.5px black;
+}
+
+.bronze h3 {
+    background: sienna;
+    margin: 40px 0 0 0;
+}
+
+.silver h3 {
+    background: silver;
+    padding: 59px 90px 49px 90px;
+    font-size: 200%;
+    margin: 0 0 -40px 0;
+}
+
+.gold h3 {
+    background: gold;
+    margin: 40px 0 0 0;
+}
+
+.electromeetPlans p strong {
+    background: #dedede;
+    padding: 23px 50px 21px 50px;
+    /* border-radius: 10px; */
+}
+
+@media only screen and (max-width: 700px) {
+    .electromeetPlans {
+        display: initial;
+    }
+
+    .bronze, .silver, .gold {
+        float: none;
+        width: 100%;
+        border: none;
+        margin: 0 0 50px 0;
+        font-size: 90%;
+    }
+
+    .bronze h3, .silver h3, .gold h3 {
+        padding: 10px 0px 10px 10px;
+        border-radius: 5px;
+    }
+}
+
+/* About Section */
+.aboutSection {
+    padding: 25px 10% 30px 10%;
+}
+
+@media only screen and (max-width: 500px) {
+    .aboutSection {
+        padding: 5% 5% 1% 5%;
+    }
+}
+
+.aboutSection p, .aboutSection li {
+    font-size: 140%;
+    margin: 10px 0 0 0;
+}
+
+.aboutSection h2 {
+    font-size: 270%;
+    border-bottom: 1px dashed #c8c8c8;
+    margin: 10% 0 0 0;
+}
+
+.aboutSection img {
+    display: block;
+    margin: initial;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+    .aboutSection img {
+        display: none;
+    }
+}
+
+.tryNow {
+    margin: 4% 0 2% 0;
+    padding: 20px;
+    border-radius: 3px;
+    border: 1px solid #fd8504;
+    text-decoration: none;
+    color: black;
+    font-size: 175%;
+    text-align: center;
+    transition: .3s ease-in-out;
+}
+
+.aboutSection a {
+    text-decoration: none;
+}
+
+.aboutSection a:hover {
+    text-decoration: none;
+}
+
+.ytbevid {
+    display: flex;
+    justify-content: center;
+    margin: 9px 0 0 0;
+}
+
+.tryNow:hover {
+    background: orange;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.tryNow:visited {
+    text-decoration: none;
+}
+
+.tryNow:focus {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    position: static;
+    bottom: 0;
+    padding: 40px 10% 30px 10%;
+    overflow: hidden;
+    color: white;
+}
+
+footer section {
+    width: 28%;
+    float: left;
+    margin: 0 0 0 30px;
+}
+
+@media only screen and (max-width: 1077px) {
+    footer section {
+        float: initial;
+        width: 100%;
+        clear: left;
+        margin: 0 0 30px 0;
+    }
+}
+
+footer li {
+    font-size: 120%;
+    color: white;
+}
+
+footer h4 {
+    font-size: 180%;
+    border-bottom: 1px solid white;
+    padding: 0 0 12px 0;
+}
+
+footer input {
+    padding: 10px;
+    color: black;
+    font-size: 140%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin: 10px 0 0 0;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0 0 0 -40px;
+}
+
+footer div {
+    float: initial;
+    clear: left;
+    padding: 20px 0 0 0;
+}
+
+/* FAQ Page */
+.accContents p, li {
+    font-size: 130% !important;
+}
+
+/* Microphone Testing Page */
+#meter {
+    border: 1px dashed #c8c8c8;
+    height: 28px;
+    background: linear-gradient(to right, rgba(200, 200, 200, 0.64) , white);
+}
+
+
+
+/* Contact Page */
+.contactUs form {
+    border: 1px solid #dfdfdf;
+    padding: 0px 35px 35px 35px;
+}
+
+.contactUs form p {
+    margin: 30px 0 -15px 0;
+}
+
+.contactUs iframe {
+    float: right;
+}
+
+input {
+    padding: 10px;
+    color: black;
+    font-size: 140%;
+    border-radius: 0px;
+    border: 1px solid rgb(223, 223, 223);
+    margin: 15px 0 0 0;
+}
+
+@media only screen and (max-width: 971px) {
+    .contactUs iframe {
+        display: none;
+        /*
+		float: initial;
+        clear: left;
+		margin: intial;
+		*/
+    }
+}
+
+.contactUs ul {
+    list-style: none;
+    margin: 0 0 0 -40px;
+}
+
+.contactUs h3 {
+    font-weight: bold;
+}
+
+.contactUs hr {
+    margin: 40px 0 40px 0;
+}
+
+/* Other Products page */
+.otherProducts li {
+    margin: 10px 0 0 -18px;
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #F90;
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+/* Presenter Profile Page */
+.profileBlocks {
+    overflow: auto;
+}
+
+.profileBlocks a {
+    text-decoration: white;
+    color: white;
+}
+
+.profileBlocks a:hover {
+    color: white;
+}
+
+.profileBlocks span {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.profileBlocks .blocks {
+    transition: .3s ease-in-out;
+    float: left;
+    text-shadow: 1.5px 1.5px 1.5px black;
+    padding: 15px;
+    height: 180px;
+    font-size: 150%;
+    width: 24%;
+    text-align: center;
+    border: 1px solid lightgray;
+    background: rgba(253, 133, 4, 0.8);
+    margin: 5px 5px 0 0;
+}
+
+.profileBlocks .blocks:hover {
+    background: rgb(253, 133, 4);
+}
+
+@media only screen and (max-width: 833px) {
+    .profileBlocks .blocks {
+        width: 100%;
+        float: initial;
+        height: 126px;
+    }
+}
+
+/* Generate Initial Access Keys */
+.keyFieldsTitle {
+    font-size: 150%;
+    font-weight: bold;
+    width: 155px;
+}
+
+.keyFieldsText {
+    font-size: 150%;
+    width: 100px;
+    color: red;
+}
+
+.keyFieldsButton {
+}
+
+.accessKey {
+    width: 220px;
+    font-size: 60%;
+}
+
+/* Session Recordings Page */
+.customTimeModule {
+    text-align: center;
+}
+
+.customTimeModule strong {
+    color: black;
+    border-bottom: 1px lightgray dashed;
+    padding: 2px;
+}
+
+@media only screen and (max-width: 533px) {
+    .customTimeModule {
+        display: none;
+    }
+}
+
+.scheduleTable {
+    background: lightgray;
+    text-align: center;
+}
+
+.scheduleTable1 {
+    font-weight: bold;
+}
